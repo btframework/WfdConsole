@@ -54,7 +54,7 @@ namespace WfdConsole
 
         static void Main(string[] args)
         {
-            wclMessageBroadcaster.SetSyncMethod(wclMessageSynchronizationKind.skNone);
+            wclMessageBroadcaster.SetSyncMethod(wclMessageSynchronizationKind.skThread);
 
             Thread t = new Thread(WfdThread);
             t.Start();
